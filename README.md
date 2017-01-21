@@ -1,63 +1,75 @@
 # Procédure d'installation et d'utilisation
 
-## I - Installation standard :
+## I - Installation standard
 
-    Prérequis :
-        Linux (le logiciel fonctionne très bien sur Ubuntu 12.04 LTS 64 bits avec Gnome/Unity)
-        libgtk2.0-dev (sous Ubuntu, équivalents chez les autres distributions)
-        bash comme shell par défaut
-        gcc, make (ou build-essential pour Ubuntu)
+### Prérequis
 
-    Vérifications des prérequis :
-        [ ~] echo $SHELL # vérifier que à renvoit bien /bin/bash
-        [ ~] sudo dpkg -l | grep build-essential # vérifier que le package est bien installé
-        [ ~] sudo dpkg -l | grep libgtk2 # vérifier que le package est bien installé
+* Linux (le logiciel fonctionne très bien sur Ubuntu 12.04 LTS 64 bits avec Gnome/Unity)
+* libgtk2.0-dev (sous Ubuntu, équivalents chez les autres distributions)
+* bash comme shell par défaut
+* gcc, make (ou build-essential pour Ubuntu)
 
-    Installation des prérequis en cas de besoin pour Ubuntu :
-        [ ~] apt-get update
-        [ ~] apt-get install build-essential
-        [ ~] apt-get install libgtk2.0-dev
+### Vérifications des prérequis
+    
+    [ ~] echo $SHELL # vérifier que à renvoit bien /bin/bash
+    [ ~] sudo dpkg -l | grep build-essential # vérifier que le package est bien installé
+    [ ~] sudo dpkg -l | grep libgtk2 # vérifier que le package est bien installé
 
-    Installation :
-        # Cloner le repo
-        cd src/
-        [ ~/chat $] chmod +x configure.sh
-        [ ~/chat $] ./configure.sh
+### Installation des prérequis en cas de besoin pour Ubuntu
 
-    Lancement :
-        [ ~ $] chat-server
-        [ ~ $] chat-client
-        [ ~ $] chat-shell-client
+    [ ~] apt-get update
+    [ ~] apt-get install build-essential
+    [ ~] apt-get install libgtk2.0-dev
 
-# II - Installation dégradée (Si vous n'avez pas Gtk) :
+### Installation
 
-    Prérequis :
-        Linux
-        gcc, make (ou build-essential pour Ubuntu)
+     # Cloner le repo
+     cd src/
+     [ ~/chat $] chmod +x configure.sh
+     [ ~/chat $] ./configure.sh
 
-    Vérifications des prérequis :
-        [ ~] sudo dpkg -l | grep build-essential # vérifier que le package est bien installé
+## Lancement
 
-    Installation des prérequis en cas de besoin pour Ubuntu :
-        [ ~] apt-get update
-        [ ~] apt-get install build-essential
+    [ ~ $] chat-server
+    [ ~ $] chat-client
+    [ ~ $] chat-shell-client
 
-    Installation :
-        # cloner le repo
-        [ ~ $] cd src/
-        [ ~/chat $] make server
-        [ ~/chat $] make client_shell
+## II - Installation dégradée (Si vous n'avez pas Gtk)
 
-    Lancement :
-        [ ~/chat $] ./server
-        [ ~/chat $] ./client_shell
+### Prérequis
 
-    Remarque :
-        Si vous avez Gtk d'installé et que vous souhaitez recourir à l'installation dégradée, vous pouvez également faire
-        [ ~/chat $] make client # ou make tout court pour tout construire
-        [ ~/chat $] ./client # pour lancer le client en mode graphique
+* Linux
+* gcc, make (ou build-essential pour Ubuntu)
 
-# III - utilisation :
+### Vérifications des prérequis
+   
+    [ ~] sudo dpkg -l | grep build-essential # vérifier que le package est bien installé
+
+### Installation des prérequis en cas de besoin pour Ubuntu
+
+    [ ~] apt-get update
+    [ ~] apt-get install build-essential
+
+### Installation
+
+    # cloner le repo
+    [ ~ $] cd src/
+    [ ~/chat $] make server
+    [ ~/chat $] make client_shell
+
+### Lancement
+
+    [ ~/chat $] ./server
+    [ ~/chat $] ./client_shell
+
+#### Remarque
+
+Si vous avez Gtk d'installé et que vous souhaitez recourir à l'installation dégradée, vous pouvez également faire
+
+    [ ~/chat $] make client # ou make tout court pour tout construire
+    [ ~/chat $] ./client # pour lancer le client en mode graphique
+
+## III - utilisation
 
 Pour les différents modes d'installation choisis, il faut :
 * Lancer en premier le server (comme indiqué dans les parties précédentes)
@@ -85,7 +97,8 @@ Les différents levels sont les suivants :
 * LOG_INFO : garde trace des échanges
 * LOG_WARNING : avertissements
 
-# IV - Avertissements :
+## IV - Avertissements
 
-* Ne pas utiliser les exécutables déjà présents dans l'archive .tar.gz (fonctionnent pour une Ubuntu 12.04 LTS en 64 bits)
+* Ne pas utiliser les exécutables déjà présents (fonctionnent pour une Ubuntu 12.04 LTS en 64 bits)
 * Une fois le script configure.sh lancé, l'archive .tar.gz est reconstruite avec les nouveaux exécutables compilés chez vous
+
