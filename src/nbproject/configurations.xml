@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="chat" root=".">
+      <df name="rapport">
+      </df>
+      <in>client.c</in>
+      <in>client_shell.c</in>
+      <in>iofunctions.c</in>
+      <in>iohead.h</in>
+      <in>listfunctions.c</in>
+      <in>listhead.h</in>
+      <in>logfunctions.c</in>
+      <in>loghead.h</in>
+      <in>server.c</in>
+      <in>socketfunctions.c</in>
+      <in>sockethead.h</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="client.c" ex="false" tool="0" flavor="0">
+        <cTool>
+          <incDir>
+            <pElem>/usr/lib/i386-linux-gnu/gtk-2.0/include</pElem>
+            <pElem>/usr/include/gtk-2.0</pElem>
+            <pElem>/usr/local/include/libpng12</pElem>
+            <pElem>/usr/include/gio-unix-2.0/</pElem>
+            <pElem>/usr/include/glib-2.0</pElem>
+            <pElem>/usr/local/include/freetype2</pElem>
+            <pElem>/usr/include/cairo</pElem>
+            <pElem>/usr/include/pixman-1</pElem>
+            <pElem>/usr/include/gdk-pixbuf-2.0</pElem>
+            <pElem>/usr/include/pango-1.0</pElem>
+            <pElem>/usr/lib/i386-linux-gnu/glib-2.0/include</pElem>
+            <pElem>/usr/include/atk-1.0</pElem>
+            <pElem>/usr/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
