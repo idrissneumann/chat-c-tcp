@@ -4,7 +4,7 @@
 
 ### Prérequis
 
-* Linux (le logiciel fonctionne très bien sur Ubuntu 12.04 LTS 64 bits avec Gnome/Unity)
+* Linux ou Mac OS
 * libgtk2.0-dev (sous Ubuntu, équivalents chez les autres distributions)
 * bash comme shell par défaut
 * gcc, make (ou build-essential pour Ubuntu)
