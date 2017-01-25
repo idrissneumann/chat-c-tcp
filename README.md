@@ -2,26 +2,26 @@
 
 ## Standard installation
 
-### Required dependancies
+### Required dependencies
 
 * Linux or Mac OS
 * Gtk
 * bash v3+ as default shell
 * gcc, make
 
-### Verifying dependancies on Ubuntu
+### Verifying dependencies on Ubuntu
     
     [ ~] echo $SHELL # check if it's bash
     [ ~] sudo dpkg -l | grep build-essential
     [ ~] sudo dpkg -l | grep libgtk2
 
-### Installing dependancies on Ubuntu
+### Installing dependencies on Ubuntu
 
     [ ~] apt-get update
     [ ~] apt-get install build-essential
     [ ~] apt-get install libgtk2.0-dev
 
-### Installating dependancies on Mac OS X
+### Installating dependencies on Mac OS X
 
     $ brew update
     $ brew install gtk
@@ -41,18 +41,18 @@
 
 ## Installing without gtk
 
-### Required dependancies
+### Required dependencies
 
 * Linux
 * bash v3+ as default shell
 * gcc, make
 
-### Verifying dependancies on Ubuntu
+### Verifying dependencies on Ubuntu
    
     [ ~] echo $SHELL # check if it's bash
     [ ~] sudo dpkg -l | grep build-essential
 
-### Installing dependancies on Ubuntu
+### Installing dependencies on Ubuntu
 
     [ ~] apt-get update
     [ ~] apt-get install build-essential
