@@ -82,14 +82,6 @@ The chat client commands :
 * /QUIT : quit the chat
 * /STOP : stop the server
 
-
-Des fichiers de logs sont disponibles pour chaque utilisation. 
-Les fichiers concernés se trouvent dans le répertoire dans lequel vous lancez les commandes, ils ont pour noms :
-
-* server-<date>.log : fichier de log server
-* client-<date>.log : fichier de log client
-* client_shell-<date>.log : fichier de log pour le client en mode shell
-
 There is log files for each apps with following log messages levels:
 * LOG_DEBUG : debugging messages
 * LOG_ERR : error messages
