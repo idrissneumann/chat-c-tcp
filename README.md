@@ -21,12 +21,17 @@
     [ ~] apt-get install build-essential
     [ ~] apt-get install libgtk2.0-dev
 
+### Installation des prérequis sur Mac OS X
+
+    $ brew update
+    $ brew install gtk
+
 ### Installation
 
      # Cloner le repo
      cd src/
      [ ~/chat $] chmod +x configure.sh
-     [ ~/chat $] ./configure.sh
+     [ ~/chat $] ./configure.sh -b
 
 ## Lancement
 
@@ -53,7 +58,7 @@
 ### Installation
 
     # cloner le repo
-    [ ~ $] cd src/
+    [ ~ $] cd src
     [ ~/chat $] make server
     [ ~/chat $] make client_shell
 
