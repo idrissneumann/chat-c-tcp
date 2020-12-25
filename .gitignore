@@ -6,9 +6,17 @@ tmp/
 *.swp
 *~.nib
 local.properties
+.DS_Store
 .settings/
 .loadpath
 .recommenders
+
+.~lock.cv_en.odt#
+.~lock.cv_fr.odt#
+
+# Intellij
+*.iml
+.idea
 
 # Eclipse Core
 .project
@@ -48,3 +56,14 @@ local.properties
 
 # Code Recommenders
 .recommenders/
+
+# Packages
+*.tgz
+*.tar.gz
+*.rpm
+*.zip
+
+target/
+hs_err_pid*.log
+
+*.code-workspace

@@ -7,6 +7,12 @@ all:
 	make client
 	make client_shell
 	make clean
+
+all_noui:
+	make clean
+	make server
+	make client_shell
+	make clean
 	
 server: server.o socketfunctions.o iofunctions.o listfunctions.o logfunctions.o
 	gcc -pthread server.o socketfunctions.o iofunctions.o listfunctions.o logfunctions.o -o server
