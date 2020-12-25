@@ -11,33 +11,42 @@
 
 ### Verifying dependencies on Ubuntu
     
-    [ ~] echo $SHELL # check if it's bash
-    [ ~] sudo dpkg -l | grep build-essential
-    [ ~] sudo dpkg -l | grep libgtk2
+```shell
+$ sudo dpkg -l | grep build-essential
+$ sudo dpkg -l | grep libgtk2
+```
 
 ### Installing dependencies on Ubuntu
 
-    [ ~] apt-get update
-    [ ~] apt-get install build-essential
-    [ ~] apt-get install libgtk2.0-dev
+```shell
+$ apt-get update
+$ apt-get install build-essential
+$ apt-get install libgtk2.0-dev
+```
 
 ### Installating dependencies on Mac OS X
 
-    $ brew update
-    $ brew install gtk
+```shell
+$ brew update
+$ brew install gtk
+```
 
 ### Installation
 
-     # clone repo or download
-     cd src/
-     [ ~/chat $] chmod +x configure.sh
-     [ ~/chat $] ./configure.sh -b
+```shell
+# clone repo or download
+$ cd src/
+$ chmod +x configure.sh
+$ ./configure.sh -b
+```
 
 ## Running apps
 
-    [ ~ $] chat-server
-    [ ~ $] chat-client
-    [ ~ $] chat-shell-client
+```shell
+$ chat-server
+$ chat-client
+$ chat-shell-client
+```
 
 ## Installing without gtk
 
@@ -48,27 +57,33 @@
 * gcc, make
 
 ### Verifying dependencies on Ubuntu
-   
-    [ ~] echo $SHELL # check if it's bash
-    [ ~] sudo dpkg -l | grep build-essential
+
+```shell
+$ sudo dpkg -l | grep build-essential
+```
 
 ### Installing dependencies on Ubuntu
 
-    [ ~] apt-get update
-    [ ~] apt-get install build-essential
+```shell
+$ apt-get update
+$ apt-get install build-essential
+```
 
 ### Installation
 
-    # clone repo or download
-    [ ~ $] cd src
-    [ ~/chat $] chmod +x configure.sh
-    [ ~/chat $] ./configure.sh -s
+```shell
+# clone repo or download
+$ cd src
+$ chmod +x configure.sh
+$ ./configure.sh -s
+```
 
 ### Running apps
 
-    [ ~/chat $] chat-server
-    [ ~/chat $] chat-shell-client
-
+```shell
+$ chat-server
+$ chat-shell-client
+```
 
 ## Using apps
 
@@ -79,16 +94,15 @@ Do the following steps:
 * Run the client with the host "127.0.0.1" and the previous port 
 
 The chat client commands :
-* /QUIT : quit the chat
-* /STOP : stop the server
+* `/QUIT`: quit the chat
+* `/STOP`: stop the server
 
 There is log files for each apps with following log messages levels:
-* LOG_DEBUG : debugging messages
-* LOG_ERR : error messages
-* LOG_INFO : informations messages
-* LOG_WARNING : warning messages
+* `LOG_DEBUG`: debugging messages
+* `LOG_ERR`: error messages
+* `LOG_INFO`: informations messages
+* `LOG_WARNING`: warning messages
 
 You can use grep on this levels
 
 Enjoy !
-
